@@ -35,7 +35,7 @@ class Node:
                 for m in range(0, 3):
                     for n in range(0, 3):
                         if self.array2d[x][y] == endNode.array2d[m][n]:
-                            self.h += abs(x * y - m * n)
+                            self.h += abs(x - m) + abs(y - n)
 
     def setG(self, g):
         self.g = g
